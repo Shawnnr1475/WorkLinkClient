@@ -1,0 +1,31 @@
+.input-auto-container{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.auto-results-container{
+    z-index:2;
+    position: absolute;
+    top:50px;
+    max-height: 100px;
+    overflow: hidden;
+    background-color: white;
+    font-size: 0.8rem;
+    overflow-y:auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.output{
+    padding: 5px;
+    overflow: hidden;
+    max-height: 25px;
+}
+.auto-results-container::-webkit-scrollbar{
+  display: none;
+}
+
+.output:hover{
+    background-color: lightgray;
+}
+
