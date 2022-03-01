@@ -49,7 +49,7 @@ const Signup =() => {
     }
 
     async function RegisterUser(data){
-      const postUserInfor = await fetch("http://localhost:5000/signup/user",{
+      const postUserInfor = await fetch("https://wlapi.herokuapp.com/signup/user",{
         headers: {
           'Content-Type': 'application/json'
         },

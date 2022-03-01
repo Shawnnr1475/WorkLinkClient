@@ -54,7 +54,7 @@ const BecomeExpertPage = ({jobTitles}) => {
             </div>
             <div className="signup-right">
             <label> Become an Expert </label>
-            <form action="http://localhost:5000/expert/new" method ="POST" encType="multipart/form-data">
+            <form action="https://wlapi.herokuapp.com/expert/new" method ="POST" encType="multipart/form-data">
                 <div className="form-part1">
                 <div className="ppic-container">
                     <input name="profilepic" type="file" ref={img_containerRef} className="input-img" onChange={setImgPreview}></input>

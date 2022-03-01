@@ -9,7 +9,7 @@ import ExpertFullInfor from "./ExpertFullInfor"
 
 const FindExpertPage = ({jobTitles, signInUser, experts, setExperts, expert, setExpert}) => {
     useEffect(async ()=>{
-      const fetchExperts = await fetch("http://localhost:5000/experts")
+      const fetchExperts = await fetch("https://wlapi.herokuapp.com/experts")
       if(fetchExperts){
         const data = await fetchExperts.json()
         setExperts(data)

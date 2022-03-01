@@ -9,7 +9,7 @@ const ResultsInfor = ({expert, setExpert, setShowFullInfor}) => {
         <div className="result-infor" onClick={ViewFullInfor}>
             <div className="ppic-container">
                 <div className="img-container">
-                    <img className="ppic-img" src={`http://localhost:5000/upload/profile/experts/${expert.profilepic}`}></img>:
+                    <img className="ppic-img" src={`https://wlapi.herokuapp.com/upload/profile/experts/${expert.profilepic}`}></img>:
                 </div>
             </div>
             <div className="expert-details">

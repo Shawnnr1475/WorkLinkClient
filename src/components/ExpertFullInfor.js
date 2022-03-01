@@ -14,7 +14,7 @@ const ExpertFullInfor = ({expert, setShowFullInfor, setSearchResults, signInUser
             <div className="left-full-infor">
                 <div className="ppic-container">
                   <div className="img-container">
-                      <img className="ppic-img" src={`http://localhost:5000/upload/profile/experts/${expert.profilepic}`}></img>:
+                      <img className="ppic-img" src={`https://wlapi.herokuapp.com/upload/profile/experts/${expert.profilepic}`}></img>:
                   </div>
                 </div>
                 <h3>{expert.firstname + " " + expert.lastname}</h3>
