@@ -72,7 +72,7 @@ const FindExpertPage = ({jobTitles, signInUser, experts, setExperts, expert, set
         </ReactMapGL>
         <InputFindExpert jobTitles={jobTitles} FindExpertSearch={FindExpertSearch}/>
         {searchResults ? <FindExpertResults experts={experts} setExpert={setExpert} showFullInfor = {showFullInfor} setShowFullInfor = {setShowFullInfor} searchResults = {searchResults} setSearchResults={setSearchResults}/>:""}
-        {showFullInfor ?<ExpertFullInfor signInUser = {signInUser} setShowFullInfor={setShowFullInfor} expert={expert} setExpert={setExpert} showFullInfor = {showFullInfor} setShowFullInfor = {setShowFullInfor} setSearchResults={setSearchResults}/>:""}
+        {showFullInfor ?<ExpertFullInfor signInUser = {signInUser} setShowFullInfor={setShowFullInfor} expert={expert} setExpert={setExpert} showFullInfor = {showFullInfor} setSearchResults={setSearchResults}/>:""}
         </div>
     )
 }
