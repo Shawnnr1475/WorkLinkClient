@@ -6,11 +6,11 @@ import Signup from "./components/Signup"
 import {Route,Routes} from "react-router-dom";
 import {useState, useEffect} from "react"
 import InputAutocomplete from "./components/InputAutocomplete";
+import Map from "./components/Map";
 function App(){
   useEffect(()=>{
     async function getSignInUser(){
       const user = await localStorage.getItem("client")
-      console.log(user)
 
       if(user){
         setSignInUser(JSON.parse(user))
@@ -26,14 +26,21 @@ function App(){
     <div>
       <Routes>
         <Route path="/" element={<Main signInUser={signInUser}/>}/>
-        <Route path="/find-expert" element={<FindExpertPage
+        {/* <Route path="/find-expert" element={<FindExpertPage
         signInUser={signInUser}
         setExperts={setExperts}
         experts={experts}
         expert={expert}
         setExpert = {setExpert}
         jobTitles = {jobTitles}
-        />}/>
+        />}/> */}
+        <Route path="find-expert" element={<Map 
+        jobTitles={jobTitles} 
+        signInUser = {signInUser}
+        setExperts={setExperts}
+        experts={experts}
+        expert={expert}
+        setExpert = {setExpert}/>}/>
         <Route path="/become-expert" element={<BecomeExpertPage jobTitles={jobTitles}/>}/>
         <Route path="/login" element={<Login expert={expert} setExpert={setExpert} setSignInUser={setSignInUser}/>}/>
         <Route path="/signup" element={<Signup/>}/>
