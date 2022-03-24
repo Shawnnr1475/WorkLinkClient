@@ -2,6 +2,7 @@ import mapboxgl from 'mapbox-gl';
 import {useState, useRef, useEffect} from "react"
 import InputFindExpert from "./InputFindExpert"
 import locationIcon from "../img/placeholder (1).png"
+import workerloader from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker'
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
@@ -15,7 +16,7 @@ const Map = ({jobTitles, signInUser, experts, setExperts, expert, setExpert})=>{
         zoom: zoom
         });
 
-        mapboxgl.workerClass = require('worker-loader/mapbox-gl/dist/mapbox-gl-csp-worker').default;
+        mapboxgl.workerClass = workerloader.default;
         
         const el = document.createElement('div');
         el.className = 'marker';
