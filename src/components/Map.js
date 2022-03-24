@@ -15,7 +15,7 @@ const Map = ({jobTitles, signInUser, experts, setExperts, expert, setExpert})=>{
         zoom: zoom
         });
 
-        mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+        mapboxgl.workerClass = require('worker-loader/mapbox-gl/dist/mapbox-gl-csp-worker').default;
         
         const el = document.createElement('div');
         el.className = 'marker';
