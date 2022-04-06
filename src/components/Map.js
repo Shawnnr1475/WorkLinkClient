@@ -1,8 +1,9 @@
-import mapboxgl from 'mapbox-gl';
+// eslint-disable-next-line import/no-webpack-load-syntax
+import mapboxgl from '!mapbox-gl';
 import {useState, useRef, useEffect} from "react"
 import InputFindExpert from "./InputFindExpert"
 import locationIcon from "../img/placeholder (1).png"
-import workerloader from 'worker-loadermapbox-gl/dist/mapbox-gl-csp-worker'
+
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
@@ -16,7 +17,7 @@ const Map = ({jobTitles, signInUser, experts, setExperts, expert, setExpert})=>{
         zoom: zoom
         });
 
-   x
+ 
         const el = document.createElement('div');
         el.className = 'marker';
         el.style.backgroundImage = "url('/placeholder (1).png')"
