@@ -1,5 +1,5 @@
-// eslint-disable-next-line import/no-webpack-load-syntax
-import mapboxgl from '!mapbox-gl';
+
+import mapboxgl from 'mapbox-gl';
 import {useState, useRef, useEffect} from "react"
 import InputFindExpert from "./InputFindExpert"
 import locationIcon from "../img/placeholder (1).png"
