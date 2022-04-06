@@ -1,4 +1,4 @@
-import mapboxgl from 'mapbox-gl';
+import mapboxgl from '!mapbox-gl';
 import {useState, useRef, useEffect} from "react"
 import InputFindExpert from "./InputFindExpert"
 import locationIcon from "../img/placeholder (1).png"
@@ -16,8 +16,7 @@ const Map = ({jobTitles, signInUser, experts, setExperts, expert, setExpert})=>{
         zoom: zoom
         });
 
-        mapboxgl.workerClass = workerloader.default;
-        
+   x
         const el = document.createElement('div');
         el.className = 'marker';
         el.style.backgroundImage = "url('/placeholder (1).png')"
