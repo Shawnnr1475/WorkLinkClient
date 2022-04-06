@@ -1,8 +1,8 @@
-import mapboxgl from '!mapbox-gl';
+import mapboxgl from 'mapbox-gl';
 import {useState, useRef, useEffect} from "react"
 import InputFindExpert from "./InputFindExpert"
 import locationIcon from "../img/placeholder (1).png"
-import workerloader from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker'
+import workerloader from 'worker-loadermapbox-gl/dist/mapbox-gl-csp-worker'
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
